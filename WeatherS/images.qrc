@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ru.png</file>
+        <file>ua.png</file>
+    </qresource>
+</RCC>
