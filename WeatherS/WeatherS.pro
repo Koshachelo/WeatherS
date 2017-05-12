@@ -1,12 +1,16 @@
 QT += qml quick positioning
 
-CONFIG += c++11
+CONFIG += c++11 \
+plugin
 
 SOURCES += main.cpp
-
+#LIBS        =        -lmingw32 -LD:\QtCreator\5.8\mingw53_32\lib D:\QtCreator\5.8\mingw53_32\lib\libqtmain.a -LC:\utils\my_sql\my_sql\lib -LC:\utils\postgresql\pgsql\lib -lshell32 D:\QtCreator\5.8\mingw53_32\lib\libQt5Quick.a D:\QtCreator\5.8\mingw53_32\lib\libQt5Gui.a D:\QtCreator\5.8\mingw53_32\lib\libQt5Qml.a D:\QtCreator\5.8\mingw53_32\lib\libQt5Network.a D:\QtCreator\5.8\mingw53_32\lib\libQt5Positioning.a D:\QtCreator\5.8\mingw53_32\lib\libQt5Core.a release\weatherS_res.o
+#INCLUDEPATH += D:/Qt/Static/5.8.0/include
 RESOURCES += qml.qrc \
     images.qrc
 win32:RC_FILE = weatherS.rc
+#QMAKE_LFLAGS_RELEASE += -Wl,-s -release -Wl,-subsystem,windows -mthreads
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
 
@@ -28,3 +32,5 @@ DEFINES += QT_DEPRECATED_WARNINGS
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS +=

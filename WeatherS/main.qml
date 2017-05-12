@@ -4,12 +4,13 @@ import QtQuick.Layouts 1.0
 import QtLocation 5.6
 import QtPositioning 5.5
 import Qt.labs.settings 1.0
+//Основная форма
 ApplicationWindow {
     visible: true
     width: 640
     height: 480
     title: qsTr("WeatherS")
-
+//Обьявление прокрутки экрана
     SwipeView {
         id: swipeView
         anchors.fill: parent
@@ -31,7 +32,7 @@ ApplicationWindow {
         id: page3
         }
     }
-
+//Обьявление нижней панели
     footer: TabBar {
         id: tabBar
         currentIndex: swipeView.currentIndex
@@ -44,6 +45,7 @@ ApplicationWindow {
         TabButton {
             text: qsTr("Карта")
         }
+//Сохранение данных
         Settings {
                 id: settings
                 property string weatherString: ""

@@ -1,0 +1,4 @@
+#ifndef WEATHERS_GLOBAL_H
+#define WEATHERS_GLOBAL_H
+
+#endif // WEATHERS_GLOBAL_H

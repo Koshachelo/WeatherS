@@ -3,7 +3,7 @@ import QtLocation 5.6
 import QtPositioning 5.5
 Page3Form {
     property alias mapp: mapp
-
+    //Плагин карты
     Plugin {
         id: osmPlugin
         name: "osm"
@@ -13,7 +13,7 @@ Page3Form {
         //     value:
         // }
     }
-
+    //Обьявляем карту
     Map {
         id:mapp
         anchors.fill: parent

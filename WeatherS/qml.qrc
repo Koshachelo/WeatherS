@@ -9,4 +9,19 @@
         <file>Page3.qml</file>
         <file>Page3Form.ui.qml</file>
     </qresource>
+    <qresource prefix="/qml">
+        <file>QtQuick.2/qmldir</file>
+        <file>QtLocation/qmldir</file>
+        <file>QtPositioning/qmldir</file>
+        <file>Qt/labs/settings/qmldir</file>
+        <file>QtQuick/Layouts/qmldir</file>
+        <file>QtQuick/Window.2/qmldir</file>
+        <file>QtQuick/Controls.2/Material/qmldir</file>
+        <file>QtQuick/Controls.2/Universal/qmldir</file>
+        <file>QtQuick/Controls.2/plugins.qmltypes</file>
+        <file>QtQuick/Controls.2/libqtquickcontrols2plugin.a</file>
+        <file>QtQuick/Controls.2/libqtquickcontrols2plugind.a</file>
+        <file>QtQuick/Controls.2/qtquickcontrols2plugin.prl</file>
+        <file>QtQuick/Controls.2/qtquickcontrols2plugind.prl</file>
+    </qresource>
 </RCC>

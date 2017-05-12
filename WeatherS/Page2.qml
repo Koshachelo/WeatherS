@@ -2,7 +2,7 @@ import QtQuick 2.4
 
 Page2Form {
     id: pg2
-
+    //Получаем прогноз на пять дней
    signal weather(string city,int code)
     onWeather: {
         if(code==0){
@@ -19,6 +19,7 @@ Page2Form {
                     return
                 }
             }
+            //Сохраняем и присваеваем данные
             settings.forecastString=request.responseText
             var JsonObject = JSON.parse(request.responseText);
             image.source="http://openweathermap.org/img/w/"+JsonObject.list[0].weather[0].icon+".png"
@@ -50,6 +51,7 @@ Page2Form {
             request.send()
         }}
     else{
+            //Присваеваем сохраненные данные
             var JsonObject = JSON.parse(settings.forecastString);
             image.source="http://openweathermap.org/img/w/"+JsonObject.list[0].weather[0].icon+".png"
             image1.source="http://openweathermap.org/img/w/"+JsonObject.list[1].weather[0].icon+".png"
